@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p6_gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Sono:wght@300&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        img{
+            width: 100%;
+        }
+        :root{
+            --color-primary: #005813; 
+            --color-secundary: #00861D; 
+            --color-bg: #EBFFEF; 
+            --color-black: #00861D; 
+        }
+        .card_txt{
+            font-family: "Barlow Condensed", sans-serif;
+        }
+        .gallery{
+            display: flex;
+            gap: 1em;
+            flex-wrap: wrap;
+        }
+        .card{
+            display: flex;
+            flex-grow: 1;
+            flex-basis: 26%;
+            flex-direction: column;
+            border: solid 0.3em var(--color-primary);
+            background-color: var(--color-bg);
+            padding: 1em;
+        }
+        .card:nth-child(1), .card:nth-child(3) { 
+            flex: 1 3 15%; 
+        }
+        .card:nth-child(2) { 
+            flex: 1 3 30%; 
+        }
+        .card:nth-child(4) .card:nth-child(6), .card:nth-child(5) { 
+            flex: 1 3 25%; 
+        } 
+        .card_img{
+            width: 100%;
+            height: 224px;
+        }
+        .card_img img{
+            object-fit: cover;
+            height: 100%;
+        }
+        .card_txt{
+            display: flex;
+            background-color: #EBFFEF;
+            flex-direction: column;
+            justify-content: baseline;
+            padding: 2em 0 0 0;
+        }
+        .card_txt h1{
+            color: var(--color-primary);
+            flex-grow: 1;
+            letter-spacing: 0.15em;
+            font-variant: small-caps;
+        }
+        .card_txt h2{
+            color: var(--color-secundary);
+            justify-content: flex-start;
+            font-size: 1.8em;
+            flex-grow: 1;
+            display: flex;
+            font-weight: 700;
+        }
+        .card_txt p{
+            justify-content: baseline;
+            padding: 1em 0 0 0;
+            font-weight: 100;
+            font-size: 1.25em;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="gallery">
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/01.jpg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>monet</h1>
+                    <h2>Parlamento de Londres</h2>
+                    <p>Las primeras pinturas las realizó desde allí mismo, pero tras haber regresado a Francia continuó con ellas hasta sumar las 19 que se conocen de los Parlamentos de Londres.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/02.jpg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>monet</h1>
+                    <h2>El estanque de ninfeas</h2>
+                    <p>Representa un antes y un después en su obra. Monet pintó este estanque un gran número de veces de hecho, se con-virtió en el tema más recurrente de esta última etapa.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/03.jpg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>monet</h1>
+                    <h2>Bain a la grenouillere</h2>
+                    <p>Uno de los lugares favoritos tanto de Monet como de su compañero de pinceles Renoir, era el restaurante de la isla  “La Grenouillère” junto al río Sena. </p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/04.jpg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>monet</h1>
+                    <h2>Impresón, sol naciente</h2>
+                    <p>La pintura representa el puerto de El Havre,  ciudad en la que el artista pasó gran parte de su infancia.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/05.jpg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>monet</h1>
+                    <h2>Mujer con sombrilla  </h2>
+                    <p>Se trata de un retrato de su esposa Camille y su hijo Jean en Argenteuil. El cuadro es tan natural que casi parece una fotografía.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/06.jpg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>monet</h1>
+                    <h2>Mujeres en el jardín</h2>
+                    <p>Fue una de las primeras telas en las que se vislumbra el cambio de Monet hacia lo que posteriormente llamaríamos impresionismo. Aún hay huella de los modelos clásicos.</p>
+                </header>
+            </div>
+        </div>
+    </main>  
+</body>
+</html>
